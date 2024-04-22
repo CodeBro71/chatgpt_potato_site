@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Great Irish Potato Famine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #666;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Great Irish Potato Famine</h1>
+    </header>
+    <nav>
+        <a href="#" onclick="openTab('overview')">Overview</a>
+        <a href="#" onclick="openTab('causes')">Causes</a>
+        <a href="#" onclick="openTab('impact')">Impact</a>
+        <a href="#" onclick="openTab('sources')">Sources</a>
+    </nav>
+    <div class="container">
+        <div id="overview" class="tab">
+            <h2>Overview</h2>
+            <p>The Great Irish Potato Famine, also known as the Great Hunger, was a period of mass starvation and disease in Ireland from 1845 to 1852. It was caused by a potato blight, which destroyed the potato crops, the main food source for the Irish population.</p>
+        </div>
+        <div id="causes" class="tab" style="display: none;">
+            <h2>Causes</h2>
+            <p>The primary cause of the famine was a disease called Phytophthora infestans, commonly known as potato blight, which spread rapidly across Ireland, causing the potato crops to rot in the ground. The Irish population was heavily dependent on potatoes as their main source of food, so the failure of the potato crop led to widespread hunger and malnutrition.</p>
+            <p>Additionally, the socio-economic and political conditions in Ireland exacerbated the impact of the famine. Many Irish peasants were tenants on land owned by wealthy landlords, and they were forced to pay high rents, leaving them with little money to purchase other food sources when the potato crop failed.</p>
+        </div>
+        <div id="impact" class="tab" style="display: none;">
+            <h2>Impact</h2>
+            <p>The Great Irish Potato Famine had devastating consequences for Ireland. It is estimated that over one million people died from starvation and disease, while millions more emigrated from Ireland in search of a better life elsewhere.</p>
+            <p>The population of Ireland plummeted during this period, and the social and economic effects of the famine were felt for generations. The Irish diaspora spread across the globe, with many Irish immigrants settling in the United States, Canada, Australia, and other countries.</p>
+        </div>
+        <div id="sources" class="tab" style="display: none;">
+            <h2>Sources</h2>
+            <ul>
+                <li><a href="https://www.history.com/topics/immigration/irish-potato-famine" target="_blank">History.com - Irish Potato Famine</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Great_Famine_(Ireland)" target="_blank">Wikipedia - Great Famine (Ireland)</a></li>
+                <li><a href="https://www.bbc.co.uk/history/british/victorians/famine_01.shtml" target="_blank">BBC History - The Famine</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function openTab(tabName) {
+            var i, tabcontent;
+            tabcontent = document.getElementsByClassName("tab");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+    </script>
+</body>
+</html>
